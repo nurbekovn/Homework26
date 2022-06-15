@@ -8,20 +8,16 @@ import lombok.Data;
 @AllArgsConstructor
 
 public class Box<T> {
-    private T var;
-    private T var2;
+    private T object;
 
-    public static  <T> void genericMethod(T var, T var2) {
-        System.out.println(var);
-        System.out.println(var2);
-
+    public static <T> T genericMethod (T object) {
+        return object;
     }
 
     @Override
     public String toString() {
-        return "Box " +
-                " var is " + var +
-                ", var2 is " + var2 +".";
-
+        return "Box{ " +
+                "object=" + object +
+                '}';
     }
 }

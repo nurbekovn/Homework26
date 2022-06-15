@@ -5,10 +5,7 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Box<String> box = new Box<>("You","Me");
-        Box<Integer> box2 = new Box<>(2,3);
-
-        Box.genericMethod(box,box2);
-
+        Box<String> box = new Box<>("Nurbekov project");
+        System.out.println(Box.genericMethod(box));
     }
 }
